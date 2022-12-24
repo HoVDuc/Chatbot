@@ -1,0 +1,96 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- health_advice
+- food_advice
+- ask_making
+- request_name
+- thanku
+- ask_ability
+
+entities:
+- parts
+- food 
+- eating
+
+forms:
+  name_form:
+    required_slots:
+      - name
+
+slots:
+  parts:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: parts
+  food:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: food
+  eating:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: eating
+
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_text
+        conditions:
+          - active_loop: name_form
+            requested_slot: name
+
+responses:
+  utter_greet:
+  - text: Chào! bạn khỏe không
+  utter_cheer_up:
+  - text: 'cố lên bro'
+  utter_did_that_help:
+  - text: Bạn cần giúp gì không?
+  utter_happy:
+  - text: Tuyệt
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: Tôi là một người máy :)~
+  utter_making:
+  - text: Bạn muốn xem cách làm không?
+  utter_deny:
+  - text: Ok! Vậy thui :*
+  utter_ask_name:
+  - text: Bạn tên là gì vậy
+  utter_greet_name:
+  - text: Ok! Chào {name}, tôi đã nhớ tên bạn
+  utter_no_problem:
+  - text: Không có gì đâu anh bạn!
+  utter_ability:
+  - text: Tôi có thể trò chuyện cùng bạn, và đặc biệt tôi có thể tư vấn các món ăn phù hợp với sức khỏe bạn
+
+actions:
+  - action_advice
+  - action_food_advice
+  - action_search_food
+  - action_name
+  - validate_name_form
+  - utter_greet
+  - utter_making
+  - utter_happy
+  - utter_deny
+  - utter_ask_name
+  - utter_no_problem

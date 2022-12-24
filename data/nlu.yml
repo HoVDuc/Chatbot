@@ -1,0 +1,348 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - xin chào
+    - chào buổi sáng
+    - chào buổi tối
+    - alo
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - gặp lại sau
+    - bye bye
+
+- intent: thanku
+  examples: |
+    - cảm ơn
+    - thanks 
+    - thank you
+    - cảm ơn rất nhiều
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - đúng vậy
+    - có
+    - tất nhiên
+    - chính xác
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - không
+    - không bao giờ
+    - Tôi không nghĩ vậy
+    - tôi không thích điều đó
+    - không thể nào
+
+- intent: mood_great
+  examples: |
+    - Tuyệt vời
+    - tôi cảm thấy thật vui
+    - tôi cảm thấy rất tốt
+    - tôi khỏe
+    - tôi ổn
+
+- intent: mood_unhappy
+  examples: |
+    - ngày hôm nay của tôi thật tồi tệ
+    - tôi buồn
+    - tôi cảm thấy không được tốt
+    - không hạnh phúc
+
+- intent: bot_challenge
+  examples: |
+    - bạn là robot
+    - bạn là con người
+
+- intent: ask_ability
+  examples: |
+    - bạn có thể là gì nhỉ?
+    - bạn có những chức năng gì?
+    - cho tôi xem chức năng của bạn
+    - bạn có thể giúp gì cho tôi ???
+
+- intent: health_advice
+  examples: |
+    - Tôi cảm thấy đau [bụng](parts)
+    - [răng](parts) tôi bị đau
+    - tôi cảm thấy tức [ngực]
+
+- intent: food_advice
+  examples: |
+    - Tôi muốn ăn [cá hồi](food)
+    - Tôi muốn ăn [cá hồi](food) được không?
+    - Gợi ý cho tôi món [cá hồi](food)
+
+- intent: ask_making
+  examples: |
+    - làm sao để làm món [Miến xào thịt băm](eating)?
+    - cách làm [Miến xào thịt băm](eating)
+    - cho tôi biết [Miến xào thịt băm](eating) làm như thế nào?
+    - [Súp cua](eating) làm như thế nào?
+
+- intent: request_name
+  examples: |
+    - Tên tôi là gì?
+    - Đố bạn tên của tôi là gì?
+    - Tôi tên gì?
+
+###==========================================================================
+- lookup: parts
+  examples: |
+    - bụng
+    - chân
+    - răng
+    - ngực
+    - lưng
+    - miệng
+     
+- lookup: food
+  examples: |
+    - trái cây
+    - đậu nành
+    - súp lơ xanh
+    - bánh ngọt
+    - chuối
+    - quả mọng
+    - gừng
+    - các loại hạt
+    - trà xanh
+    - thịt xay
+    - bông cải
+    - cá hồi
+    - phô mai
+    - sữa chua
+    - cơm trắng
+    - sữa
+    - sinh tố
+    - cá ngừ
+    - hạnh nhân
+    - bánh mì
+    - cá
+    - măng tây
+    - lòng đỏ trứng
+    - súp loãng
+    - các loại đậu
+    - dầu gan cá tuyết
+    - tôm hùm
+    - lá bạc hà
+    - rau xanh
+    - hàu
+    - các loại nấm
+    
+- lookup: eating
+  examples: |
+    - Bánh mì nướng bơ tỏi
+    - Bánh mì ngào đường
+    - Bánh mì nướng muối ớt
+    - Bánh mì hấp thịt băm
+    - Bánh mì cuộn phô mai chiên giòn
+    - Bánh mì chiên tôm
+    - Bánh cupcake
+    - Bánh muffin
+    - Bánh tart
+    - Bánh su kem
+    - Bánh bông lan
+    - Bông cải xanh xào thịt bò
+    - Súp bông cải xanh
+    - Nước ép bông cải xanh
+    - Bông cải xanh xào tôm
+    - Bông cải xanh xào cà rốt
+    - Bông cải xanh cuộn thịt chiên
+    - Cháo tôm bông cải xanh phô mai
+    - Kem chuối
+    - Chuối nếp nướng
+    - Chuối xào dừa
+    - Chuối rim đường
+    - Chè chuối
+    - Bánh chuối nướng
+    - Cá nướng giấy bạc
+    - Cá nướng cuốn bánh tráng
+    - Cá nướng mỡ hành
+    - Cá kho riềng
+    - Cá kho tộ
+    - Cá kho tiêu
+    - Cá chiên giòn
+    - Cá chiên sả ớt
+    - Cá hồi áp chảo
+    - Cháo cá hồi
+    - Cá hồi nướng
+    - Ruốc cá hồi
+    - Lẩu cá hồi
+    - Canh chua cá hồi
+    - Cá hồi chiên
+    - Cá hồi sốt cà chua
+    - salad cá ngừ
+    - bún cá ngừ
+    - cá ngừ kho
+    - cá ngừ chiên
+    - cá ngừ nướng
+    - cá ngừ áp chảo
+    - gà xào hạt điều
+    - Chả cá thát lát sốt hạt điều
+    - Gỏi hạt điều với tôm
+    - Sữa hạt điều kỷ tử hạt chia
+    - Sốt cà ri hạt điều
+    - Salad trộn trứng + hạt điều
+    - Canh bí đỏ hạt điều
+    - Nấm rơm xào thịt heo
+    - Nấm rơm xào lăn
+    - Nấm rơm chiên xù
+    - Nấm trộn sa tế
+    - Cháo nấm rơm
+    - Nấm rơm kho tiêu
+    - Nấm kho đậu hũ
+    - Thịt Heo Hầm Đậu Trắng
+    - Chân giò hầm đậu
+    - Chân gà hầm đậu táo đỏ
+    - Đuôi bò hầm đậu ngự thuốc bắc
+    - Canh Xương Thịt Heo Hầm Đậu
+    - Cơm nắm kiểu Hàn
+    - Cơm cháy giòn
+    - Cháo hải sản
+    - Cơm rang
+    - Bánh mì bọc cơm chiên
+    - Bánh đúc nóng
+    - Cá tuyết hấp hành và gừng
+    - Cá tuyết nướng sốt miso
+    - Cá tuyết hấp muối
+    - Cá tuyết hấp nấm
+    - Cá tuyết sốt bơ tỏi
+    - Cá tuyết sốt nước tương
+    - Gà kho gừng
+    - Lòng gà kho gừng
+    - Gà tây kho gừng
+    - Vịt kho gừng
+    - Bò kho gừng
+    - Cá kho gừng
+    - hàu sữa chiên trứng
+    - hàu sữa chiên xù
+    - cháo hàu sữa
+    - hàu sữa nướng
+    - hàu sữa xào
+    - lẩu hàu sữa
+    - soup hàu
+    - Hạnh nhân nướng quế
+    - Gà xào hạnh nhân
+    - Gà xào hạnh nhân
+    - Cháo hạnh nhân
+    - Chè hạnh nhân hạt sen
+    - Soda Chanh Dây Hương Bạc Hà
+    - Trà quýt bạc hà
+    - Bạc hà muối chua
+    - Trà mận bạc hà
+    - Lươn bạc hà nấu chua
+    - bánh flan
+    - trứng cuộn phô mai
+    - bánh trứng Brownies với sốt phúc bồn tử
+    - bánh Tart chanh vàng
+    - bánh Cherry Clafoutis
+    - bánh Tiramisu
+    - bánh quy
+    - Măng tây xào thịt bò
+    - Măng tây xào tôm
+    - Măng tây xào mực
+    - Măng tây xào ức gà
+    - Ốc móng tay xào măng tây
+    - Măng tây xào tỏi
+    - Súp măng tây
+    - Phô mai que
+    - Bánh sầu riêng phô mai tan chảy
+    - Gà cay phô mai
+    - Mì tôm cà ri phô mai
+    - Tôm sốt phô mai
+    - Gà xào bắp cải phô mai kiểu Hàn Quốc
+    - Tokbokki phô mai
+    - sinh tố quả mọng berry
+    - sinh tố táo
+    - sinh tố chuối
+    - mứt táo
+    - mứt cam
+    - nước ép cam
+    - Bông bí xào tôm
+    - Cải ngồng xào thịt bò
+    - Mực xào xu hào
+    - Rau lang xào tỏi
+    - Cải ngồng xào nấm hương
+    - Súp cua
+    - Súp nấm hương rau củ thịt nguội
+    - Súp gà
+    - Súp hoành thánh
+    - Súp cua trân châu
+    - Bánh sữa tươi chiên
+    - Bánh sữa tươi nướng
+    - Bánh flan sữa tươi
+    - Bánh cam sữa tươi
+    - Bánh sữa dừa
+    - Sữa chua nếp cẩm
+    - Sữa chua vị trà xanh
+    - Sữa chua mít
+    - Sữa chua vị lá dứa
+    - Sữa chua vị xoài
+    - Miến xào thịt băm
+    - Bánh mì hấp thịt băm
+    - Canh bí đỏ thịt băm
+    - Thịt băm xào lá quế
+    - Bí ngòi hấp thịt
+    - Trứng chiên thịt băm
+    - Matcha trà xanh đá xay
+    - Bánh mousse matcha trà xanh
+    - Bánh flan trà xanh
+    - Bánh cookie trà xanh
+    - Bánh trung thu trà xanh
+    - trà vải cam dâu
+    - trà đào cam sả
+    - trà dưa lưới
+    - trà bưởi mật ong
+    - Tôm hùm nướng phô mai
+    - Lẩu tôm hùm
+    - Tôm hùm hấp bia
+    - Súp tôm hùm
+    - Tôm hùm rang muối
+    - Mì tôm hùm
+    - Tôm hùm sốt bơ tỏi
+    - Sữa đậu nành trà xanh
+    - Mì đậu nành lạnh
+    - Sữa đậu lành
+    - Ba rọi nấu khóm & đậu nành
+    - Sữa đậu nành mè đen
+
+
+# - intent: inquire_time
+#   examples: |
+#     - what time is it?
+#     - what time is it in [Amsterdam](place)?
+#     - what time is it in [London](place)?
+#     - tell me the time in [Lisbon](place)
+#     - what is the current time in [Berlin](place)
+#     - what time is it in [amsterdam](place)[amsterdam](place)
+# - lookup: place
+#   examples: |
+#     - brussels
+#     - zagreb
+#     - london
+#     - lisbon
+#     - amsterdam
+#     - seattle
+# - intent: where_i_live
+#   examples: |
+#     - please remember that i live in [Amsterdam](place)?
+#     - my house is in [London](place)?
+#     - reminder. i live in [Lisbon](place)
+#     - my residence is in [Berlin](place)
+#     - remember that i live in [london](place)
+# - intent: inquire_time_difference
+#   examples: |
+#     - time difference between [Amsterdam](place)?
+#     - what is my time difference with [London](place)?
+#     - how big is the time delta with [Berlin](place)?
+#     - is there a time difference with [Lisbon](place)?
+#     - what is the time difference with [amsterdam](place)

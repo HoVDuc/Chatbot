@@ -1,0 +1,64 @@
+version: "2.0"
+
+stories:
+
+- story: greet test
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set: 
+    - requested_slot: duc
+  - action: utter_greet_name
+
+- story: hỏi tên + chấp nhận 
+  steps:
+  - intent: request_name
+  - action: action_name
+  - intent: affirm
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: name
+  - slot_was_set: 
+    - requested_slot: duc
+  - action: utter_greet_name
+
+- story: hỏi tên + từ chối
+  steps:
+  - intent: request_name
+  - action: action_name
+  - intent: utter_deny
+
+- story: test
+  steps:
+  - intent: health_advice
+  - action: action_advice
+  - intent: mood_great
+  - action: utter_did_that_help
+  - action: utter_happy
+
+- story: food advice + accept making food
+  steps:
+  - intent: food_advice
+  - action: action_food_advice
+  - action: utter_making
+  - intent: affirm
+  - action: action_search_food
+
+- story: food advice + deny making food
+  steps:
+  - intent: food_advice
+  - action: action_food_advice
+  - action: utter_making
+  - intent: deny
+  - action: utter_deny
+
+- story: ask making food 
+  steps:
+  - intent: ask_making
+  - action: action_search_food
+

@@ -1,0 +1,51 @@
+version: "3.1"
+stories:
+- story: happy path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_listen  # predicted: name_form
+  - intent: mood_great  # predicted: greet: amazing
+  - action: utter_happy  # predicted: utter_did_that_help
+- story: happy path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_listen  # predicted: name_form
+  - intent: mood_great  # predicted: greet: amazing
+  - action: utter_happy  # predicted: utter_did_that_help
+  - intent: goodbye
+  - action: utter_goodbye
+- story: sad path 1 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_listen  # predicted: name_form
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up  # predicted: action_listen
+  - action: utter_did_that_help  # predicted: action_listen
+  - action: action_listen  # predicted: utter_happy
+  - intent: affirm
+  - action: utter_happy  # predicted: name_form
+- story: sad path 2 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_listen  # predicted: name_form
+  - intent: mood_unhappy  # predicted: deny: not good
+  - action: utter_cheer_up  # predicted: action_listen
+  - action: utter_did_that_help  # predicted: action_listen
+  - action: action_listen  # predicted: utter_happy
+  - intent: deny  # predicted: bot_challenge: not really
+  - action: utter_goodbye  # predicted: utter_deny
+- story: sad path 3 (.\tests\test_stories.yml)
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: action_listen  # predicted: name_form
+  - intent: mood_unhappy  # predicted: mood_great: very terrible
+  - action: utter_cheer_up  # predicted: action_listen
+  - action: utter_did_that_help  # predicted: action_listen
+  - action: action_listen  # predicted: utter_happy
+  - intent: deny
+  - action: utter_goodbye  # predicted: utter_deny

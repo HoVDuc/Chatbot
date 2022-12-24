@@ -1,0 +1,42 @@
+{
+  "parts": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 2,
+    "confused_with": {}
+  },
+  "eating": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 14,
+    "confused_with": {}
+  },
+  "food": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9565217391304348,
+    "recall": 1.0,
+    "f1-score": 0.9777777777777777,
+    "support": 22
+  },
+  "macro avg": {
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "f1-score": 0.9333333333333332,
+    "support": 22
+  },
+  "weighted avg": {
+    "precision": 0.9696969696969698,
+    "recall": 1.0,
+    "f1-score": 0.9818181818181819,
+    "support": 22
+  },
+  "accuracy": 0.9950248756218906
+}

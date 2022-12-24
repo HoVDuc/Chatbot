@@ -1,0 +1,294 @@
+[
+    {
+        "lưng": [
+            "cá hồi",
+            "lòng đỏ trứng",
+            "hàu",
+            "các loại nấm",
+            "dầu gan cá tuyết",
+            "cá ngừ",
+            "sữa",
+            "các loại đậu",
+            "hạnh nhân",
+            "phô mai",
+            "sữa chua",
+            "rau xanh"
+        ],
+        "răng": [
+            "sữa chua",
+            "phô mai",
+            "sữa",
+            "súp loãng",
+            "bánh ngọt",
+            "thịt xay",
+            "cá ngừ",
+            "cá hồi",
+            "sinh tố",
+            "trái cây"
+        ],
+        "bụng": [
+            "cơm trắng",
+            "chuối",
+            "bánh mì",
+            "lá bạc hà",
+            "gừng"
+        ],
+        "chân": [
+            "cá hồi",
+            "tôm hùm",
+            "trà xanh",
+            "chuối",
+            "đậu nành",
+            "súp lơ xanh"
+        ],
+        "ngực": [
+            "măng tây",
+            "các loại đậu",
+            "quả mọng",
+            "bông cải",
+            "các loại hạt",
+            "cá"
+        ],
+        "miệng": [
+            "trái cây",
+            "rau xanh",
+            "sữa chua",
+            "trà xanh",
+            "các loại đậu"
+        ]
+    },
+    {
+        "bánh mì": [
+            "Bánh mì nướng bơ tỏi",
+            "Bánh mì ngào đường",
+            "Bánh mì nướng muối ớt",
+            "Bánh mì hấp thịt băm",
+            "Bánh mì cuộn phô mai chiên giòn",
+            "Bánh mì chiên tôm"
+        ],
+        "bánh ngọt": [
+            "Bánh cupcake",
+            "Bánh muffin",
+            "Bánh tart",
+            "Bánh su kem",
+            "Bánh bông lan"
+        ],
+        "bông cải": [
+            "Bông cải xanh xào thịt bò",
+            "Súp bông cải xanh",
+            "Nước ép bông cải xanh",
+            "Bông cải xanh xào tôm",
+            "Bông cải xanh xào cà rốt",
+            "Bông cải xanh cuộn thịt chiên",
+            "Cháo tôm bông cải xanh phô mai"
+        ],
+        "chuối": [
+            "Kem chuối",
+            "Chuối nếp nướng",
+            "Chuối xào dừa",
+            "Chuối rim đường",
+            "Chè chuối",
+            "Bánh chuối nướng"
+        ],
+        "cá": [
+            "Cá nướng giấy bạc",
+            "Cá nướng cuốn bánh tráng",
+            "Cá nướng mỡ hành",
+            "Cá kho riềng",
+            "Cá kho tộ",
+            "Cá kho tiêu",
+            "Cá chiên giòn",
+            "Cá chiên sả ớt"
+        ],
+        "cá hồi": [
+            "Cá hồi áp chảo",
+            "Cháo cá hồi",
+            "Cá hồi nướng",
+            "Ruốc cá hồi",
+            "Lẩu cá hồi",
+            "Canh chua cá hồi",
+            "Cá hồi chiên",
+            "Cá hồi sốt cà chua"
+        ],
+        "cá ngừ": [
+            "salad cá ngừ",
+            "bún cá ngừ",
+            "cá ngừ kho",
+            "cá ngừ chiên",
+            "cá ngừ nướng",
+            "cá ngừ áp chảo"
+        ],
+        "các loại hạt": [
+            "gà xào hạt điều",
+            "Chả cá thát lát sốt hạt điều",
+            "Gỏi hạt điều với tôm",
+            "Sữa hạt điều kỷ tử hạt chia",
+            "Sốt cà ri hạt điều",
+            "Salad trộn trứng + hạt điều",
+            "Canh bí đỏ hạt điều"
+        ],
+        "các loại nấm": [
+            "Nấm rơm xào thịt heo",
+            "Nấm rơm xào lăn",
+            "Nấm rơm chiên xù",
+            "Nấm trộn sa tế",
+            "Cháo nấm rơm",
+            "Nấm rơm kho tiêu",
+            "Nấm kho đậu hũ"
+        ],
+        "các loại đậu": [
+            "Thịt Heo Hầm Đậu Trắng",
+            "Chân giò hầm đậu",
+            "Chân gà hầm đậu táo đỏ",
+            "Đuôi bò hầm đậu ngự thuốc bắc",
+            "Canh Xương Thịt Heo Hầm Đậu"
+        ],
+        "cơm trắng": [
+            "Cơm nắm kiểu Hàn",
+            "Cơm cháy giòn",
+            "Cháo hải sản",
+            "Cơm rang",
+            "Bánh mì bọc cơm chiên",
+            "Bánh đúc nóng"
+        ],
+        "dầu gan cá tuyết": [
+            "Cá tuyết hấp hành và gừng",
+            "Cá tuyết nướng sốt miso",
+            "Cá tuyết hấp muối",
+            "Cá tuyết hấp nấm",
+            "Cá tuyết sốt bơ tỏi",
+            "Cá tuyết sốt nước tương"
+        ],
+        "gừng": [
+            "Gà kho gừng",
+            "Lòng gà kho gừng",
+            "Gà tây kho gừng",
+            "Vịt kho gừng",
+            "Bò kho gừng",
+            "Cá kho gừng"
+        ],
+        "hàu": [
+            "hàu sữa chiên trứng",
+            "hàu sữa chiên xù",
+            "cháo hàu sữa",
+            "hàu sữa nướng",
+            "hàu sữa xào",
+            "lẩu hàu sữa",
+            "soup hàu"
+        ],
+        "hạnh nhân": [
+            "Hạnh nhân nướng quế",
+            "Gà xào hạnh nhân",
+            "Gà xào hạnh nhân",
+            "Cháo hạnh nhân",
+            "Chè hạnh nhân hạt sen"
+        ],
+        "lá bạc hà": [
+            "Soda Chanh Dây Hương Bạc Hà",
+            "Trà quýt bạc hà",
+            "Bạc hà muối chua",
+            "Trà mận bạc hà",
+            "Lươn bạc hà nấu chua"
+        ],
+        "lòng đỏ trứng": [
+            "bánh flan",
+            "trứng cuộn phô mai",
+            "bánh trứng Brownies với sốt phúc bồn tử",
+            "bánh Tart chanh vàng",
+            "bánh Cherry Clafoutis",
+            "bánh Tiramisu",
+            "bánh quy"
+        ],
+        "măng tây": [
+            "Măng tây xào thịt bò",
+            "Măng tây xào tôm",
+            "Măng tây xào mực",
+            "Măng tây xào ức gà",
+            "Ốc móng tay xào măng tây",
+            "Măng tây xào tỏi",
+            "Súp măng tây"
+        ],
+        "phô mai": [
+            "Phô mai que",
+            "Bánh sầu riêng phô mai tan chảy",
+            "Gà cay phô mai",
+            "Mì tôm cà ri phô mai",
+            "Tôm sốt phô mai",
+            "Gà xào bắp cải phô mai kiểu Hàn Quốc",
+            "Tokbokki phô mai"
+        ],
+        "sinh tố": [
+            "sinh tố quả mọng berry",
+            "sinh tố táo",
+            "sinh tố chuối",
+            "mứt táo",
+            "mứt cam",
+            "nước ép cam"
+        ],
+        "rau xanh": [
+            "Bông bí xào tôm",
+            "Cải ngồng xào thịt bò",
+            "Mực xào xu hào",
+            "Rau lang xào tỏi",
+            "Cải ngồng xào nấm hương"
+        ],
+        "súp loãng": [
+            "Súp cua",
+            "Súp nấm hương rau củ thịt nguội",
+            "Súp gà",
+            "Súp hoành thánh",
+            "Súp cua trân châu"
+        ],
+        "sữa": [
+            "Bánh sữa tươi chiên",
+            "Bánh sữa tươi nướng",
+            "Bánh flan sữa tươi",
+            "Bánh cam sữa tươi",
+            "Bánh sữa dừa"
+        ],
+        "sữa chua": [
+            "Sữa chua nếp cẩm",
+            "Sữa chua vị trà xanh",
+            "Sữa chua mít",
+            "Sữa chua vị lá dứa",
+            "Sữa chua vị xoài"
+        ],
+        "thịt xay": [
+            "Miến xào thịt băm",
+            "Bánh mì hấp thịt băm",
+            "Canh bí đỏ thịt băm",
+            "Thịt băm xào lá quế",
+            "Bí ngòi hấp thịt",
+            "Trứng chiên thịt băm"
+        ],
+        "trà xanh": [
+            "Matcha trà xanh đá xay",
+            "Bánh mousse matcha trà xanh",
+            "Bánh flan trà xanh",
+            "Bánh cookie trà xanh",
+            "Bánh trung thu trà xanh"
+        ],
+        "trái cây": [
+            "trà vải cam dâu",
+            "trà đào cam sả",
+            "trà dưa lưới",
+            "trà bưởi mật ong"
+        ],
+        "tôm hùm": [
+            "Tôm hùm nướng phô mai",
+            "Lẩu tôm hùm",
+            "Tôm hùm hấp bia",
+            "Súp tôm hùm",
+            "Tôm hùm rang muối",
+            "Mì tôm hùm",
+            "Tôm hùm sốt bơ tỏi"
+        ],
+        "đậu nành": [
+            "Sữa đậu nành trà xanh",
+            "Mì đậu nành lạnh",
+            "Sữa đậu lành",
+            "Ba rọi nấu khóm & đậu nành",
+            "Sữa đậu nành mè đen"
+        ]
+    }
+]
