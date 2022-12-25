@@ -1,2 +1,2 @@
 # chatbot
-Project for Natural Language Processing and Computer Science
+Project for Natural Language Processing
