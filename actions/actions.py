@@ -3,11 +3,10 @@ from typing import Any, Text, Dict, List
 import json
 import random
 from rasa_sdk import Action, Tracker, FormValidationAction
-from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.types import DomainDict
 
-with open('data/database.json', 'r', encoding='utf8') as f:
+with open('data/data.json', 'r', encoding='utf8') as f:
     data = json.load(f)
 
 GET_PART = None
@@ -60,7 +59,7 @@ class ActionFoodAdvice(Action):
             if get_food in data[0][GET_PART]:
                 food = random.choice(data[1][get_food])
                 GET_EATING = food
-                msg = f"Đây là một món ăn từ {get_food} bạn có thể tham khảo:\n{food}\n Món này rất tốt cho {GET_PART} đó nha <3"
+                msg = f"Đây là một món ăn từ {get_food} bạn có thể tham khảo:\n{food}\nMón này rất tốt cho {GET_PART} đó nha <3\nBạn muốn xem cách làm không?"
                 dispatcher.utter_message(text=msg)
             else:
                 dispatcher.utter_message(

@@ -21,3 +21,13 @@ rules:
   - intent: ask_ability
   - action: utter_ability
   - action: utter_did_that_help
+
+- rule: Tư vấn sức khỏe
+  steps:
+  - intent: health_advice
+  - action: action_advice
+
+- rule: ask making food 
+  steps:
+  - intent: ask_making
+  - action: action_search_food
