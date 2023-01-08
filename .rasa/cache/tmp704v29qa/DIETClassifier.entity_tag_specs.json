@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-eating",
+      "2": "I-eating",
+      "3": "L-eating",
+      "4": "U-eating",
+      "5": "B-food",
+      "6": "I-food",
+      "7": "L-food",
+      "8": "U-food",
+      "9": "B-parts",
+      "10": "I-parts",
+      "11": "L-parts",
+      "12": "U-parts",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-eating": 1,
+      "I-eating": 2,
+      "L-eating": 3,
+      "U-eating": 4,
+      "B-food": 5,
+      "I-food": 6,
+      "L-food": 7,
+      "U-food": 8,
+      "B-parts": 9,
+      "I-parts": 10,
+      "L-parts": 11,
+      "U-parts": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]
